@@ -1,0 +1,25 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Polygon Drawer</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="left">
+        <textarea id="mySavedDiagram" cols="30" rows="10"></textarea>
+        <div class="buttons">
+            <button onclick="load()">Cargar</button>
+            <button onclick="save()">Guardar</button>
+        </div>
+    </div>
+    <div class="right">
+        <div id="drawer"></div>
+    </div>
+    <script src="js/go.js"></script>
+    <script src="js/PolygonDrawingTool.js"></script>
+    <script src="js/GeometryReshapingTool.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

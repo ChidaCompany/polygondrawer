@@ -1,0 +1,68 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  max-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+body .left, body .right {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50vw;
+          flex: 0 0 50vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .left #mySavedDiagram {
+  width: 500px;
+}
+
+body .left .buttons {
+  margin-top: 20px;
+  display: inline-block;
+}
+
+body .left .buttons button {
+  outline: none;
+  background: lightskyblue;
+  color: #4a4a4a;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 3px;
+  margin: 0 15px;
+}
+
+body .left .buttons button:hover {
+  cursor: pointer;
+}
+
+body .right #drawer {
+  width: calc(50vw - 1px);
+  height: 100vh;
+  border-left: 1px solid black;
+}
+
+body .right #render {
+  display: none;
+}
+/*# sourceMappingURL=main.css.map */

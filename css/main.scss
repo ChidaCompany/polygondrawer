@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-height: 100vh;
+    margin: 0;
+    padding: 0;
+    .left, .right {
+        flex: 0 0 50vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .left {
+        #mySavedDiagram {
+            width: 500px;
+        }
+        .buttons {
+            margin-top: 20px;
+            display: inline-block;
+            button {
+                outline: none;
+                background: lightskyblue;
+                color: #4a4a4a;
+                padding: 10px 15px;
+                font-size: 14px;
+                border-radius: 3px;
+                margin: 0 15px;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .right {
+        #drawer {
+            width: calc(50vw - 1px);
+            height: 100vh;
+            border-left: 1px solid black;
+        }
+        #render {
+            display: none;
+        }
+    }
+}
